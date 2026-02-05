@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            margin: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        td {
+            vertical-align: top;
+        }
+        label {
+            font-weight: bold;
+            color: #444;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="datetime-local"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 6px 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            margin: 10px 5px 0 0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"]:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+  <form>
+        <h2>Basic Info</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label for="employee-id">Employee ID</label></td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td><label for="last-name">Last Name</label></td>
+                <td>Dodsworth</td>
+            </tr>
+            <tr>
+                <td><label for="first-name">First Name</label></td>
+                <td><input type="text" id="first-name" name="first-name" value="Anne"></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label><br>
+                    <input type="radio" id="xxx" name="gender" value="XXX"><label for="xxx">XXX</label><br>
+                    <input type="radio" id="zzz" name="gender" value="ZZZ" checked><label for="zzz">ZZZ</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="birthdate">Birth Date</label></td>
+                <td><input type="datetime-local" id="birthdate" name="birthdate" value="1969-07-02T00:00"></td>
+            </tr>
+            <tr>
+                <td><label for="hiredate">Hire Date</label></td>
+                <td><input type="datetime-local" id="hiredate" name="hiredate" value="1994-11-15T00:00"></td>
+            </tr>
+            <tr>
+                <td><label for="reports-to">Reports To</label></td>
+                <td>
+                    <select id="reports-to" name="reports-to">
+                        <option value="Buchanan" selected>Buchanan</option>
+                        <option value="Hanoi">Hanoi</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h2>Contact Info</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" value="name@example.com"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><input type="text" id="address" name="address" value="7 Houndstooth Rd."></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input type="text" id="city" name="city" value="London"></td>
+            </tr>
+            <tr>
+                <td><label for="region">Region</label></td>
+                <td><input type="text" id="region" name="region"></td>
+            </tr>
+            <tr>
+                <td><label for="postal-code">Postal Code</label></td>
+                <td><input type="text" id="postal-code" name="postal-code" value="WG2 7LT"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value="Russian Federation" selected>Russian Federation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="us-phone">US Home Phone</label></td>
+                <td><input type="text" id="us-phone" name="us-phone" value="(234)234-2342"></td>
+            </tr>
+            <tr>
+                <td><label for="photo">Photo</label></td>
+                <td><input type="text" id="photo" name="photo" value="EmpID9.bmp"></td>
+            </tr>
+        </table>
+
+        <h2>Optional Info</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label for="notes">Notes</label></td>
+                <td><textarea id="notes" name="notes" rows="10" cols="40">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea></td>
+            </tr>
+            <tr>
+                <td><label for="preferred-shift">Preferred Shift</label></td>
+                <td>
+                    <input type="checkbox" id="regular" name="preferred-shift" value="Regular"><label for="regular">Regular</label><br>
+                    <input type="checkbox" id="gravy-yard" name="preferred-shift" value="Gravy Yard" checked><label for="gravy-yard">Gravy Yard</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="active">Active?</label></td>
+                <td><input type="checkbox" id="active" name="active" checked></td>
+            </tr>
+            <tr>
+                <td><label for="are-you-human">Are you human?</label></td>
+                <td>TIDAWO</td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+
+</body>
+</html>

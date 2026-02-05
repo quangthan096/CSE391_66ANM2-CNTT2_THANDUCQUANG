@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f4f6f8;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1f2933;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.menu a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.search-box {
+    margin-left: auto;
+}
+
+.search-box input {
+    padding: 5px;
+}
+
+.search-box button {
+    padding: 6px 10px;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+}
+
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-add {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+
+/* BUTTON */
+.btn-edit {
+    background: #facc15;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* FORM */
+.form-container {
+    width: 600px;
+    background: white;
+    margin: 30px auto;
+    border: 1px solid #ccc;
+}
+
+.form-title {
+    background: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+form {
+    padding: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.form-action {
+    text-align: right;
+}
+
+.btn-save {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
+
+.btn-cancel {
+    background: #9ca3af;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+}
