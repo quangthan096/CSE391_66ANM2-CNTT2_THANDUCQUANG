@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Quản lý điểm sinh viên</h2>
+    <div class="input-area">
+        <input id="name" placeholder="Họ tên">
+        <input id="score" type="number" placeholder="Điểm (0-10)">
+        <button id="addBtn">Thêm</button>
+    </div>
+    <div class="filter-area">
+        <input id="search" placeholder="Tìm kiếm sinh viên">
+        <select id="rankFilter">
+            <option value="all">Tất cả</option>
+            <option value="Giỏi">Giỏi</option>
+            <option value="Khá">Khá</option>
+            <option value="Trung bình">Trung bình</option>
+            <option value="Yếu">Yếu</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th id="sortScore">Điểm ▲▼</th>
+                <th>Xếp loại</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <p id="stats"></p>
+    <script src="script.js"></script>
+</body>
+</html>
